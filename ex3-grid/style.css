@@ -1,0 +1,42 @@
+:root {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --accent: #3b82f6;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    padding: 20px;
+    background-color: var(--bg);
+  }
+
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card {
+    background-color: #3b82f6;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  h3{
+    color: var(--text);
+  }
+
+  p{
+    color: var(--text);
+  }
+
+  @media (max-width: 600px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }
