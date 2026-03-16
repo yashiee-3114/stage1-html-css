@@ -1,0 +1,87 @@
+:root {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --accent: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+h1 {
+  color: rgb(83, 2, 2);
+  background-color: cornsilk;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: rgba(247, 107, 56, 0.301);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.badge {
+  background-color: var(--accent);
+  color: var(--text);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+h3 {
+  padding: 5px;
+  font-weight: bolder;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.upper {
+  padding: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.lower {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#recommended {
+  background-color: rgba(249, 87, 28, 0.591);
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  background-color: #1161e2;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.free {
+  background-color: #042252;
+  cursor: auto;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
